@@ -1,0 +1,37 @@
+
+.carrousell {
+  width: 100vw;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.changeImg{
+  position: absolute;
+  z-index: 200;
+  background-color: var(--light-grayish-blue);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#prevImg{
+  left: 10px;
+  transform: rotate(180deg);
+}
+
+#nextImg{
+  right: 10px;
+}

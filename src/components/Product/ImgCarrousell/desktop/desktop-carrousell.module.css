@@ -1,0 +1,62 @@
+.imageSelector{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.actualImage{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.image{
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.setImage{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.changeImage{
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.changeImage:hover{
+  outline: 3px solid var(--orange);
+}
+
+.productIcon {
+  object-fit: cover;
+  width: 100%;
+}
+.productIcon:hover{
+  opacity: .4;
+}
+
+@media (min-width : 1700px) {
+  .imageSelector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  .changeImage{
+    width: 100px;
+    height: 100px;
+  }
+}

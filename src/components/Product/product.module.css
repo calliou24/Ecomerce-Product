@@ -1,0 +1,145 @@
+.productInfo{
+  width: 100%;
+  padding: 20px;
+}
+
+.brand{
+  color: var(--orange);
+  font-weight: 700;
+  font-size: .8rem;
+  letter-spacing: 3px;
+}
+.title{
+  font-size: 2.3rem;
+  margin: 20px 0;
+  color: var(--very-dark-blue);
+}
+.text{
+  color: var(--dark-grayish-blue);
+  line-height: 1.7;
+}
+.costInfo{
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  position: relative;
+}
+.price{
+  color: var(--very-dark-blue);
+  font-size:2rem;
+}
+.discount{
+  background-color: var(--pale-orange);
+  color: var(--orange);
+  font-weight: 700;
+  margin: 0 20px;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+.originalPrice{
+  position: absolute;
+  right: 0;
+  text-decoration: line-through;
+  color: var(--dark-grayish-blue);
+  font-weight:700 ;
+}
+.addItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  padding: 20px 10px;
+  background-color: var(--light-grayish-blue);
+  border-radius:10px ;
+  margin: 15px 0;
+}
+.iconCont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px;
+}
+.counter{
+  font-weight: 700;
+  color: var(--very-dark-blue);
+  font-size: 1.3rem;
+}
+.addToCart{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 20px 10px 0 var(--pale-orange);
+}
+.buttonText{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  font-weight: 700;
+
+}
+
+@media (min-width : 50em) {
+  .productCont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  .productInfo{
+    max-width: 700px;
+    width: 50%;
+    padding: 0;
+  }
+  .title{
+    font-size: 2.7rem;
+    margin: 20px 0;
+  }
+  .text{
+    width: 90%;
+    line-height: 1.5;
+  }
+  .costInfo{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    position: relative;
+  }
+  .originalPrice{
+    position: absolute;
+    left: 5px;
+    bottom: -30px;
+  }
+  .counterDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .addItem{
+    width: 45%;
+  }
+  .addToCart{
+    width: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  .productCont{
+    flex-direction: column;
+    row-gap: 100px;
+    padding: 0;
+  }
+  .productInfo{
+    width: 100%;
+  }
+}

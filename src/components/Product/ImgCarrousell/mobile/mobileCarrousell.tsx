@@ -45,7 +45,6 @@ function MobileCarrousell() {
 			</div>
 			<div className={styles.imgsCont}>
 				{actualImage}
-				{indexImage}
 			</div>
 			<div onClick={()=> handdleButton('next')} className={styles.changeImg} id={styles.nextImg}>
 				<img className={styles.iconAngle} id={styles.iconNext} src={angleArrow} alt="next image icon" />

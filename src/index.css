@@ -16,15 +16,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-*::-webkit-scrollbar {
-  width: 7px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--dark-grayish-blue);
-}
-
 body {
   --orange: hsl(26, 100%, 55%);
   --pale-orange: hsl(25, 100%, 94%);
